@@ -1,0 +1,12 @@
+---
+title: Test outthe config package
+output: html_document
+---
+
+```{r, read_config}
+config_list <- config::get()
+```
+
+The value of parameter1 from our config file is `r config_list$parameter1`.
+The value of parameter2 from our config file is `r config_list$parameter2`.
+The value of parameter3 from our config file is `r config_list$parameter3`.
