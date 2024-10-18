@@ -2,9 +2,10 @@
 title: "VRC01 Neutralization Report"
 author: "David Benkeser"
 date: "`r Sys.Date()`"
-output: html_document
+output: pdf_document
 ---
 ```{r, read-config, include = FALSE}
+WHICH_CONFIG <- Sys.getenv("WHICH_CONFIG")
 config_list <- config::get(
   config = Sys.getenv("which_config")
 )
