@@ -9,7 +9,7 @@ library(rmarkdown)
 report_filename <- paste0(
   "hiv_report_config_",
   which_config,
-  ".pdf"
+  ".html"
 )
 # rendering a report in production mode
 render(
